@@ -58,7 +58,8 @@ main section {
   height: 300px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 main section form {
   width: 100%;
