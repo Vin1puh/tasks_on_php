@@ -18,8 +18,13 @@
         <a href="lab6.php">Lab6</a>
     </nav>
 </header>
-    <main>
+<?php
+$html = file_get_contents('file.html');
+preg_match_all('/href="([^"]*)"/', $html, $links);
 
-    </main>
+foreach ($links[1] as $link) {
+    echo '<p>'.$link.'</p>' . "\n";
+}
+?>
 </body>
 </html>
